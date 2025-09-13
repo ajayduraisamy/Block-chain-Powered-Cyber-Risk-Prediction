@@ -36,22 +36,43 @@ A **Flask-based web application** for cyber insurance risk prediction with **Mac
 3. **Transaction Management** – Backend account signs and sends transactions, storing the hash in the database.  
 4. **Verification** – Admins can track blockchain transactions for audit and immutability.
 
----
-📂 Project Structure
+# 📂 Project Structure
 
-.
-├── app.py                  # Flask app with blockchain & ML integration
+
+.Block-chain-Powered-Cyber-Risk-Prediction/
+├── app.py
 ├── models.py
 ├── contracts/
-│   └── MyContract.sol      # Solidity smart contract
+│ └── MyContract.sol
 ├── build/
-│   └── compiled_contract.json
+│ └── compiled_contract.json
 ├── ml_models/
+│ ├── scaler.pkl
+│ ├── trained_columns.pkl
+│ └── random_forest_model.pkl
 ├── templates/
+│ ├── base.html
+│ ├── index.html
+│ ├── login.html
+│ ├── register.html
+│ ├── predict.html
+│ ├── profile.html
+│ ├── admin_dashboard.html
+│ ├── admin_policies.html
+│ └── chart.html
 ├── static/
+│ ├── css/
+│ │ ├── index.css
+│ │ ├── login.css
+│ │ ├── register.css
+│ │ ├── profile.css
+│ │ └── contact.css
+│ └── js/
+│ └── contact.js
 ├── requirements.txt
-└── README.md
-
+├── README.md
+└── instance/
+└── app.db
 
 ## 💻 Installation & Usage
 
